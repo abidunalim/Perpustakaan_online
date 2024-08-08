@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,
+        initial-scale=1">
+        <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Login</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: aliceblue;
+        }
+
+        form {
+            border: 3px solid #f1f1f1;
+        }
+
+        input[type=text], input[type=password] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: dodgerblue;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: auto;
+            border-radius: 20px;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        .cancelbtn {
+            width: auto;
+            padding: 10px 18px;
+            background-color: #f44336;
+            border-radius: 20px;
+        }
+
+        .imgcontainer {
+            text-align: center;
+            margin: 24px 0 12px 0;
+        }
+    
+        .img.avatar {
+            width: 40%;
+            border-radius: 50%;
+        }
+
+        .container {
+            padding: 16px;
+        }
+
+        span.psw {
+            float: right;
+            padding-top: 16px;
+        }
+
+        @media screen and (max-width:300px) {
+            span.psw {
+                display: block;
+                float: 100%;
+            }
+            .cancelbtn {
+                width: 100%;
+            }
+        }
+
+        icon {
+            padding: 10px;
+            background: dodgerblue;
+            color: white;
+            min-width: 50px;
+            text-align: center;
+        }
+
+        .header {
+            font-family: serif;
+            color: #f1f1f1;
+            background-image: url("latar_buku.jpeg");
+        }
+
+
+    </style>
+
+    <body>
+        <div class="header">
+            <h1 style="text-align: center;">Login Perpustakaan Gen Z</h1>
+        </div>
+
+        <form action="index.html" method="post">
+            <div class="imgcontainer">
+                <img src="latar_buku.jpeg" alt="avatar" class="avatar">
+            </div>
+
+            <div class="conatiner">
+                <label for="uname"><b>Username</b></label>
+                <i class="fa fa-user icon"></i>
+                <input type="text" placeholder="Enter Username" 
+                name="uname" required>
+
+                <label for="psw"><b>Password</b></label>
+                <i class="fa fa-key icon"></i>
+                <input type="password" placeholder="Enter Password"
+                value="" id="myInput" name="psw" required>
+                <input type="checkbox" onclick="myFunction()">Show Password
+                <br><br>
+
+                <button type="submit">Login</button>
+
+                <label>
+                    <input type="checkbox" checked="checked" 
+                    name="remember">
+                    Remember Me
+                </label>
+            </div>
+
+            <div class="conatiner" 
+            style="background-color: #f1f1f1;">
+
+                <button type="button" class="cancelbtn">Cancel</button>
+                <span class="psw">Forgot<a href="#"> password</a></span>
+            </div>
+        </form>
+
+        <!--code baru-->
+        <form action="signup.html">
+            <button onclick="document.getElementById('id01').style.display='block'"
+                    type="submit" style="width: auto;">Signup</button> 
+        </form>
+
+        <!--code baru-->
+        <script>
+            // Get the modal
+            var modal = document.getElementById('id01');
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+            }
+        </script> 
+
+        <script>
+            function myFunction() {
+            var x = document.getElementById("myInput");
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+            }
+        </script>
+
+    </body>
+
+    </head>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Teknologi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <style>
+    body {
+      background-color: aliceblue;
+    }
+
+    .navbar { 
+      overflow: hidden;  
+      background-color: #333; 
+    }
+
+    .navbar a {
+      color: #f2f2f2;
+      text-decoration: none;
+      float: left;
+      display: block;
+      text-align: center;
+      padding: 14px 16px;
+
+    }
+
+    .navbar a:hover{
+      background-color: #000;
+    }
+
+   div.gallery {
+    border: 1px solid #ccc;
+   }
+
+   div.gallery:hover {
+    border: 1px solid #777;
+   }
+
+   div.gallery img {
+    width: 100%;
+    height: auto;
+   }
+
+   div.desc {
+    padding: 15px;
+    text-align: center;
+   }
+
+   * {
+    box-sizing: border-box;
+   }
+
+   .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+   }
+
+   @media only screen and (max-width:700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+   }
+
+   @media only screen and (max-width:500px) {
+    .responsive {
+      width: 100%;
+
+    }
+   }
+
+   .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+   }
+
+   .header {
+    color: white;
+    background-color: #ddd;
+    background-image: url("/home/abidun/project/Latihan_SMA37/latar_buku.jpeg");
+    font-family: fantasy;
+    padding: 20px;
+    text-align: center;
+    
+   }
+
+   button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 30px;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+
+  #logout {
+    color: #f2f2f2;
+    float: right;
+
+  }
+
+  .active {
+    background-color: #04AA6D;
+  }
+  </style>
+
+  <body>
+    <div class="header">
+      <h1>Perpustakaan Gen Z</h1>
+    </div>
+
+    <div class="navbar">
+      <a target="" href="index.html">Home</a>
+      <a target="" href="teknologi.html">Teknologi</a>
+      <a target="" href="komik.html">Komik</a>
+      <a target="" href="novel.html">Novel</a>
+      <a target="" href="fiksi.html">Fiksi</a>
+      <a class="active" id="logout" target="" href="login.html" style="position: relative;">Logout</a>
+    </div>
+
+    <h2>Buku Teknologi</h2>
+
+    
+
+  </body>
+</html>

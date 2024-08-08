@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <head>
+      <title>Perpustakaan Gen Z</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+  <style>
+    body {
+      background-color: aliceblue;
+    }
+
+    .navbar { 
+      overflow: hidden;  
+      background-color: #333; 
+    }
+
+    .navbar a {
+      color: #f2f2f2;
+      text-decoration: none;
+      float: left;
+      display: block;
+      text-align: center;
+      padding: 14px 16px;
+
+    }
+
+    .navbar a:hover{
+      background-color: #777;
+    }
+
+   div.gallery {
+    border: 1px solid #ccc;
+   }
+
+   div.gallery:hover {
+    border: 1px solid #777;
+   }
+
+   div.gallery img {
+    width: 100%;
+    height: auto;
+   }
+
+   div.desc {
+    padding: 15px;
+    text-align: center;
+   }
+
+   * {
+    box-sizing: border-box;
+   }
+
+   .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+   }
+
+   @media only screen and (max-width:700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+   }
+
+   @media only screen and (max-width:500px) {
+    .responsive {
+      width: 100%;
+
+    }
+   }
+
+   .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+   }
+
+   .header {
+    color: white;
+    background-color: #ddd;
+    background-image: url("/home/abidun/project/Latihan_SMA37/latar_buku.jpeg");
+    font-family: fantasy;
+    padding: 20px;
+    text-align: center;
+    
+   }
+
+   button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 30px;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+
+  #logout {
+    color: #000;
+    float: right;
+
+  }
+
+  .active {
+    background-color: #f2f2f2;
+  }
+
+  </style>
+
+  <body>
+   
+   
+    <div class="header">
+      <h1><b>Perpustakaan Gen Z</b></h1>
+    </div>
+
+    <div class="navbar">
+      <a target="" href="#">Home</a>
+      <a target="" href="teknologi.html">Teknologi</a>
+      <a target="" href="komik.html">Komik</a>
+      <a target="" href="novel.html">Novel</a>
+      <a target="" href="fiksi.html">Fiksi</a>
+      <a class="active" id="logout" target="" href="login.html" style="position: relative;">Logout</a>
+    </div>
+
+    <br>
+    <div class="container">
+    <div class="container"><h4 class="pb-3 font-italic border-bottom">Mau mencari Ilmu lebih?...mending baca aja di Perpustakaan Gen Z Guyss</h4></div>
+    </div>
+    <div class="card-deck">
+      <div class="card">
+          <img class="card-img-top" src="/home/abidun/project/Latihan_SMA37/img/Teknologi informasi.jpeg" alt="Card image cap">
+          <div class="card-body">
+              <h5 class="card-title">Ensiklopedia Mini: Teknologi Informasi</h5>
+              <p class="card-text"><small class="text-muted">Aminuddin</small></p>
+              
+              <button onclick="myFunction().style.display='block'">OPEN</button>
+              
+              <p id="demo"></p>
+
+              <script src="daftar_buku.js"></script>
+          </div>
+      </div>
+      <div class="card">
+          <img class="card-img-top" src="/home/abidun/project/Latihan_SMA37/img/Roadmap Broadband.jpeg" alt="Card image cap">
+          <div class="card-body">
+              <h5 class="card-title">Roadmap Broadband: Indonesia Menuju Era Teknologi</h5>
+              <p class="card-text"><small class="text-muted">Denny Kusuma Hendraningrat dan Denny Setiawan</small></p>
+
+              <button onclick="myFunction().style.display='block'">OPEN</button>
+              
+              <p id="demo"></p>
+
+              <script src="daftar_buku.js"></script>
+          </div>
+      </div>
+      <div class="card">
+          <img class="card-img-top" src="https://s3-ap-southeast-1.amazonaws.com/ebook-previews/50265/190367/1.jpg" alt="Card image cap">
+          <div class="card-body">
+              <h5 class="card-title">Membuat Website Cantik & Menarik Dengan Jquery</h5>
+              <p class="card-text"><small class="text-muted">Arista Prasetyo Adi</small></p>
+
+              <button onclick="myFunction().style.display='block'">OPEN</button>
+
+              <p id="demo"></p>
+
+              <script src="daftar_buku.js"></script>
+          </div>
+      </div>
+  </div>
+  </div>
+
+  </body>
+</html>
